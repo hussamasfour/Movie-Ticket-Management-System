@@ -4,7 +4,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 import com.hussam.movieservice.dto.request.AddMovieRequest;
 import com.hussam.movieservice.entity.Movie;
-import com.hussam.movieservice.exception.NoSuchElementFoundException;
 import com.hussam.movieservice.service.MovieService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
+
 
 @RestController
 @RequestMapping("/movie")
